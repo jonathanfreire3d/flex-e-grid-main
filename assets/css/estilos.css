@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
+:root {
+    --corpo: #1D232A;
+    --cabeçalho: #1D232A;
+    --cabeçalho-mobile: #15191C;
+    --menu-lateral: #15191C;
+    --cartão:  #2C343A;
+    --fonte:  #FFFFFF;
+    --fonte-alternativa:  #95999C;
+    --links:  #0480DC;
+    --botão:  #0480DC;
+    --sombras: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    --fonte-padrao: 'Open Sans';
+    --fonte-padrao-icones:  'icones';
+}
+
+body {
+    background-color: var(--corpo);
+    font-family: 'Open Sans','icones', sans-serif;
+    color: var(--fonte);
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between; /* Coloca cada *?objetos nos cantos e o do meio centralizado. */
+   /* justify-content: space-around; vai dexar espaços iguais entre objetos. inicio meio  e fim é igaul a metade */
+   /*  justify-content: space-evenly; vai dexar espaços iguais entre objetos. inicio meio  e fim */
+    /* align-items: stretch; */ /* ocupa todo os espaço do flex conteiner, sempre na VERTICAL */
+    align-items: center;
+    background-color: var(--cabeçalho-mobile);
+    padding: 8px 16px;
+    box-shadow: var(--sombras);
+}
+
+.cabecalho__menu i::before {
+    content: '\e904';
+    font-size: 24px;
+}
+
+.cabecalho__notificacao i::before {
+    content: '\e906';
+    font-size: 24px;
+}
+.cabecalho__logo {
+    width: 40px;
+}
+
+.menu-lateral{
+    display: flex;
+    flex-direction: column; /*direção dos objetos */
+    align-self: center;
+}
+.menu-lateral__logo {
+    align-self: center; /* nessa condição foi alinhado  a imagem ao centro */
+    justify-content: space-between;
+}   
