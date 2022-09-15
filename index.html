@@ -16,6 +16,7 @@
         <header class="cabecalho">
             <button class="cabecalho__menu" aria-label="Menu"><i></i></button>
             <img src="assets/img/logo.svg" alt="Logo da HZC" class="cabecalho__logo">
+            <p class="cabecalho__perfil">Jonathan Freire</p>
             <button class="cabecalho__notificacao" aria-label="Notificações"><i></i></button>
         </header>
         <nav class="menu-lateral">
@@ -29,8 +30,9 @@
         </nav>
         <main class="principal">
             <h2 class="titulo-pagina">Inicio</h2>
-            <article class="cartao cartao--destaque">
-                <img  src="assets/img/banner-mobile_1.png" alt="banner do cartão" class="cartao__imagem">
+            <article class="cartao cartao--destaque destaque-video">
+                <img  src="assets/img/banner-mobile_1.png" alt="banner do cartão" class="cartao__imagem cartao__imagem--mobile">
+                <img  src="assets/img/banner_1.png" alt="banner do cartão" class="cartao__imagem cartao__imagem--desktop">
                 <div class="cartao__conteudo">
                     <p class="cartao__destaque">Video em destaque</p>
                     <h3 class="cartao__titulo">HZC - Life is... / 2021</h3>
@@ -40,7 +42,38 @@
                     <button class="cartao_botao cartao_botao--destaque botao cartao_botao--play">Assistir Agora</button>
                 </div>
             </article>
-            <section class="secao">
+            <article class="cartao cartao--recentes videos-recentes">
+                <h3 class="cartao__titulo">Videos recentes</h3>
+                <a href="#" class="cartao__link">Ver todos</a>
+                <ul class="cartao__lista">
+                    <li class="cartao__item">
+                        <img src="assets/img/miniatura_1.png" alt="" class="cartao__item-thumbnail">
+                        <h4 class="cartao__item-titulo">HZC - Love Machine</h4>
+                        <p class="cartao__item-perfil">Jonathan Freire</p>
+                    </li>
+                    <li class="cartao__item">
+                        <img src="assets/img/miniatura_1.png" alt="" class="cartao__item-thumbnail">
+                        <h4 class="cartao__item-titulo">HZC - Love Machine</h4>
+                        <p class="cartao__item-perfil">Jonathan Freire</p>
+                    </li>
+                    <li class="cartao__item">
+                        <img src="assets/img/miniatura_1.png" alt="" class="cartao__item-thumbnail">
+                        <h4 class="cartao__item-titulo">HZC - Love Machine</h4>
+                        <p class="cartao__item-perfil">Jonathan Freire</p>
+                    </li>
+                    <li class="cartao__item">
+                        <img src="assets/img/miniatura_1.png" alt="" class="cartao__item-thumbnail">
+                        <h4 class="cartao__item-titulo">HZC - Love Machine</h4>
+                        <p class="cartao__item-perfil">Jonathan Freire</p>
+                    </li>
+                    <li class="cartao__item">
+                        <img src="assets/img/miniatura_1.png" alt="" class="cartao__item-thumbnail">
+                        <h4 class="cartao__item-titulo">HZC - Love Machine</h4>
+                        <p class="cartao__item-perfil">Jonathan Freire</p>
+                    </li>
+                </ul>
+            </article>
+            <section class="secao secao-videos">
                 <h3 class="secao-titulo">Videos mais vistos</h3>
                 <article class="cartao">
                     <img  src="assets/img/video_1.png" alt="video" class="cartao__imagem">
@@ -81,9 +114,40 @@
                     </div>
                 </article>
             </section>
-
-            <article class="cartao cartao--destaque">
-                <img  src="assets/img/banner-mobile_2.png" alt="banner do cartão" class="cartao__imagem">
+            <article class="cartao cartao--recentes produtos-recentes">
+                <h3 class="cartao__titulo">Videos recentes</h3>
+                <a href="#" class="cartao__link">Ver todos</a>
+                <ul class="cartao__lista">
+                    <li class="cartao__item">
+                        <img src="assets/img/miniatura_1.png" alt="" class="cartao__item-thumbnail">
+                        <h4 class="cartao__item-titulo">HZC - Love Machine</h4>
+                        <p class="cartao__item-perfil">Jonathan Freire</p>
+                    </li>
+                    <li class="cartao__item">
+                        <img src="assets/img/miniatura_1.png" alt="" class="cartao__item-thumbnail">
+                        <h4 class="cartao__item-titulo">HZC - Love Machine</h4>
+                        <p class="cartao__item-perfil">Jonathan Freire</p>
+                    </li>
+                    <li class="cartao__item">
+                        <img src="assets/img/miniatura_1.png" alt="" class="cartao__item-thumbnail">
+                        <h4 class="cartao__item-titulo">HZC - Love Machine</h4>
+                        <p class="cartao__item-perfil">Jonathan Freire</p>
+                    </li>
+                    <li class="cartao__item">
+                        <img src="assets/img/miniatura_1.png" alt="" class="cartao__item-thumbnail">
+                        <h4 class="cartao__item-titulo">HZC - Love Machine</h4>
+                        <p class="cartao__item-perfil">Jonathan Freire</p>
+                    </li>
+                    <li class="cartao__item">
+                        <img src="assets/img/miniatura_1.png" alt="" class="cartao__item-thumbnail">
+                        <h4 class="cartao__item-titulo">HZC - Love Machine</h4>
+                        <p class="cartao__item-perfil">Jonathan Freire</p>
+                    </li>
+                </ul>
+            </article>
+            <article class="cartao cartao--destaque destaque-produtos">
+                <img  src="assets/img/banner-mobile_2.png" alt="banner do cartão" class="cartao__imagem cartao__imagem--mobile">
+                <img  src="assets/img/banner_2.png" alt="banner do cartão" class="cartao__imagemcartao__imagem--desktop">
                 <div class="cartao__conteudo">
                     <p class="cartao__destaque">Nova arte</p>
                     <h3 class="cartao__titulo">Only Zikas - Lagoa Dompa Club</h3>
@@ -93,7 +157,7 @@
                     <button class="cartao_botao cartao_botao--destaque botao cartao_botao--carrinho">Comprar agora</button>
                 </div>
             </article>
-            <section class="secao">
+            <section class="secao secao-produtos">
                 <h3 class="secao-titulo">Camisas mais recentes</h3>
                 <article class="cartao">
                     <img  src="assets/img/produto_1.png" alt="produto" class="cartao__imagem">
