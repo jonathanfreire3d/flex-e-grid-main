@@ -117,8 +117,14 @@ body {
 }
 .principal{
     padding: 24px 16px;
+    display: grid;
+    gap: 16px;
 }
 .titulo-pagina {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.secao-titulo {
     font-size: 1.2rem;
     font-weight: 700;
 }
@@ -128,10 +134,16 @@ body {
     overflow: hidden; /*pesquisar*/
     background-color: var(--cartão);
 }
+.cartao--destaque {
+    margin-bottom: 16px;
+}
 .cartao__conteudo {
     padding: 16px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr; /* auto para alinhar a largura ao maior texto no caso minutos*/
+    gap: 8px; /*para espaçamento no entre elementos vertical e horizontal grid */
+    /*row-gap: 8px;/*para espaçamento no entre elementos horizontal grid */
+    /*column-gap: 8px;/*para espaçamento no entre elementos Colunas vertical grid */
 
 }
 .cartao__destaque {
@@ -156,6 +168,10 @@ body {
     content: "\e90c";
     margin-right: 8px;
 }
+.cartao__info--moeda::before {
+    content: "\e905";
+    margin-right: 8px;
+}
 .cartao__info--visualizacao::before {
     content: "\e90f";
     margin-right: 8px;
@@ -169,9 +185,14 @@ body {
     height: 40px;
     border-radius: 10px;
     font-size: 0.9rem;
+    justify-self: flex-end; /*ajustamos o play a direita no final */
 }
 .cartao_botao--play::before {
     content: "\e90b";
+    font-size: 24px;
+}
+.cartao_botao--carrinho::before {
+    content: "\e901";
     font-size: 24px;
 }
 .cartao_botao--destaque {
@@ -180,4 +201,8 @@ body {
 }
 .cartao_botao--destaque::before {
     margin-right: 8px;
+}
+.secao {
+    display: grid;
+    gap: 16px;
 }
